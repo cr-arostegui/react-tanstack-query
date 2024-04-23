@@ -36,7 +36,7 @@ export default function FindEventSection() {
     );
   }
 
-  if (data) {
+  if (data && data.length) {
     content = (
       <ul className="events-list">
         {data.map((event) => (

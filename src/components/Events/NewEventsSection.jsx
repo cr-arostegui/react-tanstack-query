@@ -23,7 +23,7 @@ export default function NewEventsSection() {
     content = <ErrorBlock title="An error occurred" message={error.info?.message || 'Failed to fetch events.'} />;
   }
 
-  if (data) {
+  if (data && data.length) {
     content = (
       <ul className="events-list">
         {data.map((event) => (
